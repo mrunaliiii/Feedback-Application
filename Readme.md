@@ -27,7 +27,6 @@ spring.jpa.hibernate.ddl-auto=update
 
 ✅ Run the project:
 
-bash
 mvn spring-boot:run
 The application will start at:
 http://localhost:8080
@@ -37,7 +36,6 @@ POST /feedback
 Content-Type: application/json
 
 ✅ Sample Request (Valid)
-bash
 
 curl -X POST http://localhost:8080/feedback \
   -H "Content-Type: application/json" \
@@ -48,7 +46,6 @@ curl -X POST http://localhost:8080/feedback \
 }'
 
 ❌ Sample Request (Invalid – missing email)
-bash
 
 curl -X POST http://localhost:8080/feedback \
   -H "Content-Type: application/json" \
@@ -71,12 +68,9 @@ json
 Unit testing is implemented for FeedbackService.saveFeedback().
 
 To run the tests:
-
-bash
 mvn test
 
 ✅ Expected Output:
-bash
 [INFO] Tests run: 1, Failures: 0
 [INFO] BUILD SUCCESS
 
