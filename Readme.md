@@ -68,7 +68,7 @@ json
 Unit testing is implemented for FeedbackService.saveFeedback().
 
 To run the tests:
-mvn test
+mvn test or ./mvnw test
 
 ✅ Expected Output:
 [INFO] Tests run: 1, Failures: 0
